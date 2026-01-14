@@ -1,0 +1,97 @@
+/* Cores para fazer o degrade do azul da praia 
+#5394CE
+#92C4E7
+#2F363C
+*/
+
+body{
+  background-image: linear-gradient( #4c90cc,#92C4E7,#5d7b95);
+  background-attachment: fixed;
+    text-align: center;
+    /*aqui deixa o texto alianhado*/
+}
+
+.verde{
+    color: rgb(249, 3, 3);
+    /*Posso escolher aonde eu quero o verde, pré determinando por aqui*/ 
+    /*mas antes preciso colocar a class nas partes em que quero*/ 
+
+}
+button{
+    display: block;
+    margin-right: auto;
+    margin-bottom: auto; 
+    margin-left: auto;
+    /* os 4 primeiros do button serve pra poder centralizar o botão na tela*/
+    background-color: rgb(255, 255, 255);
+    border: 20;
+    border-color: brown;
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+}
+button:hover{
+    transform: scale(1.2)
+    /* aqui serve pra aumentar o botão quando passar o mouse por cima*/ 
+}
+img{
+    border-radius: 15px;
+    /* aqui serve para deixar as bordas arrendondadas*/
+    transition: tranform 800ms ease-in-out;
+    box-shadow:5px 5px 15px gray;
+    /*aqui coloca uma sombra na imagem*/
+    border: 5px solid rgb(209, 255, 198);
+
+}
+img:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgb(254, 188, 188);
+    transition: 500ms ease-in-out;
+    /*aqui serve pra aumentar a imagem quando passa o mouse por cima*/ 
+}
+img:active{
+    transform:scale(1.5)
+}
+h4{
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', 
+    /* aqui muda a fonte do h4*/
+}
+section{
+    place-items: center;
+    align-items: center;
+}
+.Fotos {
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: all 1s ease;
+    filter: blur(10px);
+    margin: 15px
+}
+
+.Fotos.Mostrar {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+}
+ul {
+    padding-left: 20px;
+    margin: 5px;
+}
+
+li {
+    margin: 5px;
+}
+
+/* Ajusta parágrafos */
+li p {
+    margin-bottom: 10px;
+    font-size:
+}
+
+.Fotos img {
+    display: block;
+    margin: 0 auto;
+}
